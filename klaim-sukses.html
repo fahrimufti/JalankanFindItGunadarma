@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Klaim Terkirim | Find It Gunadarma</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="lapor.css" />
+    <link rel="stylesheet" href="cari.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header class="nav">
+      <a href="index.html" class="logo">Find It</a>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="cari.html" class="on">Cari Barang</a></li>
+        <li><a href="lapor.html">Laporkan Barang</a></li>
+        <li><a href="#">Tentang</a></li>
+      </ul>
+      <a href="#"></a>
+
+      <!-- HAMBURGER -->
+      <input type="checkbox" id="toggle" />
+      <label for="toggle" class="menu-btn" aria-label="Buka menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- DOWNBAR -->
+      <div class="sidebar">
+        <a href="index.html">Beranda</a>
+        <a href="cari.html" class="on">Cari Barang</a>
+        <a href="lapor.html">Laporkan Barang</a>
+        <a href="#">Tentang</a>
+      </div>
+      <!-- DOWNBAR END -->
+    </header>
+
+    <main class="wrap gate-page">
+      <div class="done">
+        <i class="fa-solid fa-circle-check"></i>
+        <h1>Klaim terkirim</h1>
+        <p>ID klaim: <code id="kid"></code></p>
+        <span class="badge">Menunggu verifikasi</span>
+        <p class="note">Admin akan memeriksa buktimu dan menghubungi lewat email aktif.</p>
+        <div class="next">
+          <a class="btn p" href="cari.html">Kembali ke Cari Barang</a>
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+    <script src="cari.js"></script>
+  </body>
+</html>

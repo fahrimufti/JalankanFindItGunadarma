@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Laporan Terkirim | Find It Gunadarma</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="lapor.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header class="nav">
+      <a href="index.html" class="logo">Find It</a>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="cari.html">Cari Barang</a></li>
+        <li><a href="lapor.html" class="on">Laporkan Barang</a></li>
+        <li><a href="#">Tentang</a></li>
+      </ul>
+      <a href="#"></a>
+
+      <!-- HAMBURGER -->
+      <input type="checkbox" id="toggle" />
+      <label for="toggle" class="menu-btn" aria-label="Buka menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- DOWNBAR -->
+      <div class="sidebar">
+        <a href="index.html">Beranda</a>
+        <a href="cari.html">Cari Barang</a>
+        <a href="lapor.html" class="on">Laporkan Barang</a>
+        <a href="#">Tentang</a>
+      </div>
+      <!-- DOWNBAR END -->
+    </header>
+
+    <main class="wrap gate-page">
+      <div class="done">
+        <i class="fa-solid fa-circle-check"></i>
+        <h1>Laporan terkirim</h1>
+        <p>ID laporan: <code id="idLap"></code></p>
+        <span class="badge">Menunggu moderasi</span>
+        <p class="note">Laporanmu tampil di publik setelah disetujui admin.</p>
+
+        <div class="next hide" id="next-hilang">
+          <p>Sambil menunggu, lihat apakah ada barang yang mirip dengan milikmu.</p>
+          <a class="btn p" href="cari.html">Lihat barang yang mirip</a>
+        </div>
+        <div class="next hide" id="next-temu">
+          <p>Simpan barangnya dengan aman sampai ada arahan lebih lanjut.</p>
+          <a class="btn p" href="index.html">Kembali ke beranda</a>
+        </div>
+
+        <p class="note"><a href="lapor.html" style="text-decoration: underline">Buat laporan lain</a></p>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+    <script src="lapor.js"></script>
+  </body>
+</html>

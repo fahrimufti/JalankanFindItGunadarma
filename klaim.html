@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ajukan Klaim | Find It Gunadarma</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="lapor.css" />
+    <link rel="stylesheet" href="cari.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header class="nav">
+      <a href="index.html" class="logo">Find It</a>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="cari.html" class="on">Cari Barang</a></li>
+        <li><a href="lapor.html">Laporkan Barang</a></li>
+        <li><a href="#">Tentang</a></li>
+      </ul>
+      <a href="#"></a>
+
+      <!-- HAMBURGER -->
+      <input type="checkbox" id="toggle" />
+      <label for="toggle" class="menu-btn" aria-label="Buka menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- DOWNBAR -->
+      <div class="sidebar">
+        <a href="index.html">Beranda</a>
+        <a href="cari.html" class="on">Cari Barang</a>
+        <a href="lapor.html">Laporkan Barang</a>
+        <a href="#">Tentang</a>
+      </div>
+      <!-- DOWNBAR END -->
+    </header>
+
+    <main class="wrap gate-page">
+      <a class="back-link" href="cari.html" data-back>&larr; Kembali</a>
+      <div class="lapor-grid">
+        <aside class="tips">
+          <h2>Biar klaimmu disetujui</h2>
+          <ul>
+            <li><i class="fa-solid fa-key"></i>Sebutkan ciri yang hanya diketahui pemilik asli.</li>
+            <li><i class="fa-solid fa-image"></i>Foto atau bukti pembelian membantu verifikasi.</li>
+            <li><i class="fa-solid fa-envelope"></i>Admin akan menghubungi lewat email aktif.</li>
+          </ul>
+        </aside>
+
+        <form class="form" data-klaim>
+          <h1>Ajukan klaim</h1>
+          <p class="klaim-item">Barang: <b id="info"></b></p>
+
+          <div class="grp">
+            <p class="sec">Identitas</p>
+            <label>Email aktif<input type="email" required placeholder="nama@email.com" /><small>Dipakai untuk informasi lebih lanjut.</small></label>
+            <label>Nama dan NPM<input required placeholder="Nama lengkap, NPM" /><small>Dipakai untuk memastikan identitasmu.</small></label>
+          </div>
+
+          <div class="grp">
+            <p class="sec">Bukti kepemilikan</p>
+            <label>Isi klaim<textarea rows="4" required placeholder="Jelaskan ciri barang yang hanya diketahui pemilik"></textarea><small>Beri alasan atau argumen untuk memperkuat buktimu.</small></label>
+            <label>Upload bukti (opsional)<input type="file" accept="image/*" /></label>
+          </div>
+
+          <div class="acts">
+            <a class="btn" href="cari.html" data-back>Batal</a>
+            <button class="btn p">Kirim klaim</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+    <script src="cari.js"></script>
+  </body>
+</html>

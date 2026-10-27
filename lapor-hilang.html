@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Lapor Kehilangan | Find It Gunadarma</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="lapor.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header class="nav">
+      <a href="index.html" class="logo">Find It</a>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="cari.html">Cari Barang</a></li>
+        <li><a href="lapor.html" class="on">Laporkan Barang</a></li>
+        <li><a href="#">Tentang</a></li>
+      </ul>
+      <a href="#"></a>
+
+      <!-- HAMBURGER -->
+      <input type="checkbox" id="toggle" />
+      <label for="toggle" class="menu-btn" aria-label="Buka menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- DOWNBAR -->
+      <div class="sidebar">
+        <a href="index.html">Beranda</a>
+        <a href="cari.html">Cari Barang</a>
+        <a href="lapor.html" class="on">Laporkan Barang</a>
+        <a href="#">Tentang</a>
+      </div>
+      <!-- DOWNBAR END -->
+    </header>
+
+    <main class="wrap gate-page">
+      <a class="back-link" href="lapor.html">&larr; Kembali</a>
+      <div class="lapor-grid">
+        <aside class="tips">
+          <h2>Biar cepat ketemu</h2>
+          <ul>
+            <li><i class="fa-solid fa-bullseye"></i>Makin spesifik cirinya, makin mudah dicocokkan.</li>
+            <li><i class="fa-solid fa-location-dot"></i>Tulis lokasi terakhir sedetail mungkin.</li>
+            <li><i class="fa-solid fa-lock"></i>Kontakmu privat, tidak tampil ke publik.</li>
+          </ul>
+        </aside>
+
+        <form class="form" data-lapor="hilang">
+          <h1>Lapor kehilangan</h1>
+
+          <div class="grp">
+            <p class="sec">Tentang barang</p>
+            <label>Nama atau jenis barang<input required placeholder="Handphone Samsung S26" /></label>
+            <div class="row">
+              <label>Kategori<select data-opts="kat" required><option value="">Pilih kategori</option></select></label>
+              <label>Foto barang (opsional)<input type="file" accept="image/*" /></label>
+            </div>
+            <label>Deskripsi barang<textarea rows="3" placeholder="Warna, merek, ciri khas"></textarea></label>
+          </div>
+
+          <div class="grp">
+            <p class="sec">Lokasi dan waktu</p>
+            <label>Lokasi terakhir terlihat<input required placeholder="Kampus D, gedung 2" /></label>
+            <div class="row">
+              <label>Tanggal kehilangan<input type="date" required /></label>
+              <label>Perkiraan waktu (kalau tahu)<input type="time" /></label>
+            </div>
+          </div>
+
+          <div class="grp">
+            <p class="sec">Kontak</p>
+            <label>Kontak untuk informasi lebih lanjut<input required placeholder="Nomor WA atau email aktif" /><small>Privat, tidak ditampilkan ke publik.</small></label>
+          </div>
+
+          <div class="acts">
+            <a class="btn" href="lapor.html">Batal</a>
+            <button class="btn p">Kirim laporan</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+    <script src="lapor.js"></script>
+  </body>
+</html>
